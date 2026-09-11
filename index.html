@@ -1,0 +1,28 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#fbf7ed"><title>わが家のお魚ごはん｜三陸おのや</title><meta name="description" content="家族の夕食に魚料理を作る手間を体験するミニゲーム"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="polish.css"></head><body><main id="app">
+  <canvas id="scene" aria-label="魚料理を作るミニゲーム"></canvas>
+  <section id="startscreen" class="startscreen" aria-label="ゲーム開始案内">
+    <div class="start-kicker">SANRIKU ONOYA presents</div>
+    <h1><span>今夜は家族に</span>お魚ごはん。</h1>
+    <p>下ごしらえから盛り付けまで<br><b>5つの手間</b>を体験しよう</p>
+    <div class="start-actions"><span>こする</span><span>タップ</span><span>長押し</span><span>動かす</span></div>
+    <div class="autostart"><i></i><b>まもなく自動でスタート</b></div>
+  </section>
+  <header><img src="assets/logo.png" alt="三陸おのや"><div><small>夕飯まで、あと少し！</small><strong>わが家のお魚ごはん</strong></div><span id="clock">18:24</span></header>
+  <div class="progress"><i id="progressBar"></i><ol><li class="on">下ごしらえ</li><li>骨抜き</li><li>味付け</li><li>煮付け</li><li>盛り付け</li></ol></div>
+  <section id="prompt" class="prompt"><small id="stepLabel">STEP 1</small><div><h1 id="title">うろこを取ろう！</h1><p id="sub">魚を左右にゴシゴシ</p></div></section>
+  <div id="toast" class="toast">いい感じ！</div>
+  <div id="transition" class="transition"><small>ひと手間 完了</small><strong id="transitionText">次は骨抜き</strong></div>
+  <div id="family" class="family"><span>👧</span><p id="familyText">今日のお魚、楽しみ！</p></div>
+  <div id="hand" class="hand"><i></i><b>左右にスワイプ</b><small>画面を操作してね</small></div>
+  <section id="tableReveal" class="table-reveal" aria-hidden="true"><div class="table-copy"><small>家族の食卓へ</small><strong>できた！ 今夜のお魚ごはん</strong><p>「おいしそう！」</p></div><div class="served"><img class="served-plate" src="assets/ceramic-plate.webp" alt=""><img class="served-fish" src="assets/cooked-mackerel.webp" alt="煮魚"></div><div class="workload">でも、これを毎回つくるのは大変。</div></section>
+  <section id="endcard" class="endcard" aria-hidden="true"><div class="sheet">
+    <p class="eyebrow">おつかれさまでした</p><h2>おいしい魚料理。<br><em>毎回つくるのは、やっぱり大変。</em></h2>
+    <div class="chores"><span>うろこ</span><i>＋</i><span>骨抜き</span><i>＋</i><span>味付け</span><i>＋</i><span>火加減</span></div>
+    <div class="answer"><b>その手間、三陸おのやにおまかせください。</b></div>
+    <div class="product"><img src="assets/menu1.jpg" alt="三陸おのやの熟成サバ味噌煮"><div><small>三陸・釜石から毎月直送</small><strong>海のごちそう頒布会</strong><p>プロが調理した魚料理を<br><em>湯せん10分</em>で食卓へ。</p></div></div>
+    <div class="offer"><strong>4種のお魚料理 × 2食</strong><p>8食セット　月々 <b>3,350円</b>（税込）</p><small>送料930円／2回目以降は毎月メニューが変わります</small></div>
+    <div class="benefits"><span>一切れずつ個包装</span><span>冷凍ストック</span><span>レンジ調理もOK</span></div>
+    <a id="cta" href="https://www.shop-onoya.com/shop/lp/07a.aspx" target="_blank" rel="noopener"><small>手間をかけずに、ちゃんとおいしい。</small>海のごちそう頒布会を見る <b>›</b></a>
+    <button id="retry">もう一度つくる</button>
+  </div></section>
+</main><script src="game.js"></script></body></html>
